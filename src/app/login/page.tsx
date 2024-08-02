@@ -1,14 +1,14 @@
-import Login from '@pages/login/Login';
+import LoginComponent from '@pages/login/Login';
 import { NextPage } from 'next';
 
 interface Ipage {}
 
-const page: NextPage = (): JSX.Element => {
+const Login: NextPage = (): JSX.Element => {
    return (
       <main>
-         <Login />
+         <LoginComponent />
       </main>
    );
 };
 
-export default page;
+export default Login;
