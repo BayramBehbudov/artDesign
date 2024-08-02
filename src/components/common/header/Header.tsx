@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import HamburgerMenu from './HamburgerMenu'
 import Navbar from './Navbar'
 import Sign_Shop from './Sign_Shop'
+import Link from 'next/link'
 
 interface IHeader {}
 
@@ -38,7 +39,9 @@ const Header: React.FC = (): JSX.Element => {
       >
          <div className="container flex items-center justify-between text-white">
             <div className="flex items-center gap-3">
-               <Image src="/Header/logo.webp" alt="headerLogo" width={70} height={70} />
+               <Link className={`hover:scale-105`} href={'/'}>
+                  <Image src="/Header/logo.webp" alt="headerLogo" width={70} height={70} />
+               </Link>
                <GiHamburgerMenu size={25} className="hidden cursor-pointer sm:block" />
                <HamburgerMenu />
             </div>

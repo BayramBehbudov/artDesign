@@ -1,7 +1,7 @@
 interface Ipage {}
 
 const Contact: React.FC = (): JSX.Element => {
-   return <div>Contact</div>;
+   return <main>Contact</main>;
 };
 
 export default Contact;

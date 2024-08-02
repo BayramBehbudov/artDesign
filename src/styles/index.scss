@@ -4,7 +4,6 @@
 
 @layer base {
    *,
-   **,
    * > * {
       @apply transition-all duration-300;
    }
