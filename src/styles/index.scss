@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   html,
+   body {
+      @apply h-full;
+   }
+   main {
+      @apply flex-[1_1_auto];
+   }
+
+   .container {
+      @apply max-w-[1200px];
+   }
+   .wrapper {
+      @apply flex min-h-full flex-col;
+   }
+}
