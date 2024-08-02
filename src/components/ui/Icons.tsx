@@ -29,3 +29,4 @@ export const IconInverse: React.FC = (): JSX.Element => {
       </svg>
    );
 };
+

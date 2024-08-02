@@ -8,12 +8,16 @@ const config: Config = {
    ],
    theme: {
       extend: {
+         colors: {
+            mainGreen: '#14AC84',
+         },
+
          screens: {
             xl: { max: '1200px' },
             md: { max: '991.98px' },
             sm: { max: '767.98px' },
             xs: { max: '566.98px' },
-            xxs: { max: '479.98px' },
+            xxs: { max: '489.98px' },
          },
          container: {
             center: true,

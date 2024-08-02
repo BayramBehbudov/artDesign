@@ -3,7 +3,7 @@
    "tabWidth": 3,
    "printWidth": 120,
    "trailingComma": "all",
-   "semi": true,
+   "semi": false,
    "bracketSpacing": true,
    "jsxBracketSameLine": false,
    "plugins": ["prettier-plugin-tailwindcss"]
