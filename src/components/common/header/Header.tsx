@@ -1,13 +1,11 @@
 'use client'
-import Sign from './Sign';
-import HamburgerMenu from './HamburgerMenu';
-import { LuShoppingCart } from 'react-icons/lu';
-import Card from './Card';
+import HamburgerMenu from './HamburgerMenu'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { GiHamburgerMenu } from 'react-icons/gi'
 import Navbar from './Navbar'
 import Link from 'next/link'
+import Sign from './Sign'
+import Card from './Card'
 
 interface IHeader {}
 
@@ -16,7 +14,6 @@ const Header: React.FC = (): JSX.Element => {
 
    useEffect(() => {
       const handleScroll = () => {
-         console.log('scrollY:', window.scrollY)
 
          if (window.scrollY > 200) {
             setScrolled(true)
@@ -31,16 +28,6 @@ const Header: React.FC = (): JSX.Element => {
    }, [scrolled])
 
    return (
-      <header className="container flex h-20 items-center justify-between bg-[#212529] text-white">
-         <div className="flex items-center gap-3">
-            <Image src="/Header/logo.webp" alt="headerLogo" width={70} height={70} />
-            <HamburgerMenu />
-         </div>
-            <Navbar className={'items-center sm:hidden'} />
-         <div className="flex items-center gap-3">
-            <Sign />
-            <Card />
-         </div>
       <header
          className={`left-0 top-0 w-full bg-[#212529] py-2.5 transition-transform duration-1000 ${
             scrolled ? 'fixed translate-y-full animate-fade-down animate-once' : 'translate-y-0'
@@ -54,11 +41,13 @@ const Header: React.FC = (): JSX.Element => {
                <Link className={`hover:scale-105`} href={'/'}>
                   <Image src="/Header/logo.webp" alt="headerLogo" width={70} height={70} />
                </Link>
-               <GiHamburgerMenu size={25} className="hidden cursor-pointer sm:block" />
                <HamburgerMenu />
             </div>
             <Navbar className={'sm:hidden'} />
-            <Sign_Shop />
+            <div className="flex items-center gap-3">
+               <Sign />
+               <Card />
+            </div>
          </div>
       </header>
    )

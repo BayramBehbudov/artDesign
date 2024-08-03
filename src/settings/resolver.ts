@@ -12,4 +12,6 @@ export const registerSchema = z.object({
    name: z.string({ required_error: 'Name is required' }).min(5, 'Name is required'),
    lastName: z.string({ required_error: 'Last name is required' }).min(5, 'Last name is required'),
    phoneNumber: z.string({ required_error: 'Number is required' }).min(5, 'Number is required'),
+   newsletter: z.boolean({required_error: 'Newsletter is required'}).optional(),
+   terms: z.boolean({required_error: 'Terms is required'}).optional(),
 });

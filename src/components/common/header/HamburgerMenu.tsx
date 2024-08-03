@@ -1,5 +1,6 @@
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@ui/sheet';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { RxHamburgerMenu } from "react-icons/rx";
+
 import Navbar from './Navbar';
 import Sign from './Sign';
 
@@ -9,7 +10,7 @@ const HamburgerMenu: React.FC = (): JSX.Element => {
    return (
       <Sheet>
          <SheetTrigger asChild>
-            <GiHamburgerMenu size={25} className="hidden cursor-pointer sm:block" />
+            <RxHamburgerMenu size={25} className="hidden cursor-pointer sm:block"/>
          </SheetTrigger>
          <SheetContent side="left" className="hidden border-none bg-[#212121] p-5 sm:block">
             <SheetTitle></SheetTitle>

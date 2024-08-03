@@ -1,24 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-   *,
-   * > * {
-      @apply transition-all duration-300;
-   }
-   html,
-   body {
-      @apply h-full overflow-x-clip;
-   }
-   main {
-      @apply flex-[1_1_auto];
-   }
-
-   .container {
-      @apply max-w-[1200px];
-   }
-   .wrapper {
-      @apply flex min-h-full flex-col;
-   }
-}
+  
