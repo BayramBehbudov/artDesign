@@ -9,7 +9,7 @@ const Sign: React.FC<ISign> = ({ className }): JSX.Element => {
          href="/login"
          className={`rounded-lg bg-[#14A557] p-2 text-center text-black hover:bg-[#40c65b] ${className}`}
       >
-         SignIn/SignUp
+         Вход / Регистрация
       </Link>
    )
 }

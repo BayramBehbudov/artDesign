@@ -1,19 +1,19 @@
-import { IFooterSocials } from '@interfaces/interfaces';
+import { IFooterSocials } from '@interfaces/interfaces'
 
 export const headerNavbar = [
    {
-      name: 'Home',
+      name: 'Главная',
       href: '/',
    },
    {
-      name: 'About',
+      name: 'О Нас',
       href: '/about',
    },
    {
-      name: 'Contact',
+      name: 'Контакты',
       href: '/contact',
    },
-];
+]
 
 export const footerSocials: IFooterSocials[] = [
    {
@@ -72,7 +72,7 @@ export const footerSocials: IFooterSocials[] = [
       height: 27,
       src: '/Footer/socials/7.svg',
    },
-];
+]
 
 export const footerLists = {
    one: [
@@ -141,4 +141,4 @@ export const footerLists = {
          name: 'Карьерные возможности',
       },
    ],
-};
+}

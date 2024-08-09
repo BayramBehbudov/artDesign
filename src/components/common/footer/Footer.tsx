@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { IconInverse } from '@ui/Icons';
-import { Button } from '@ui/button';
-import FooterSocials from './FooterSocials';
-import { footerLists } from '@static/index';
+import Link from 'next/link'
+import { IconInverse } from '@ui/Icons'
+import { Button } from '@ui/button'
+import FooterSocials from './FooterSocials'
+import { footerLists } from '@static/index'
 interface IFooter {}
 
 const Footer: React.FC = (): JSX.Element => {
@@ -15,7 +15,7 @@ const Footer: React.FC = (): JSX.Element => {
                      <IconInverse />
                   </Link>
                   <Button
-                     className={`!bg-mainGreen w-fit rounded-lg px-14 py-2 text-xs text-[#1A1A1A]`}
+                     className={`!bg-mainGreen w-fit rounded-lg bg-[#14AC84] px-14 py-2 text-xs text-[#1A1A1A]`}
                      variant={'ghost'}
                      type={'button'}
                      aria-label={'connect with support'}
@@ -60,7 +60,7 @@ const Footer: React.FC = (): JSX.Element => {
             </div>
          </div>
       </footer>
-   );
-};
+   )
+}
 
-export default Footer;
+export default Footer
